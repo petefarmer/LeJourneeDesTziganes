@@ -2,7 +2,11 @@
 \version "2.18.0"
 \include "definitions_No-Tab.ly"
 \include "AGuitarOne.ly"
+\include "BGuitarOne.ly"
 \include "ARhythmGuitar.ly"
+\include "BRhythmGuitar.ly"
+\include "FourBarsEmRhythmGuitar.ly"
+\include "FourBarsEmGuitarOne.ly"
 
 \book {
  \header {
@@ -20,11 +24,13 @@
   \new Staff \with {
    instrumentName = \markup {\column {"Guitar 1"}}
    \clef "treble_8"
-   \time 4/4
+%   \time 4/4
   }{
    \tempo 4 = 120
    \key e \minor
    \AGuitarOne
+   \FourBarsEmGuitarOne
+   \BGuitarOne
   }
 
   \new Staff \with {
@@ -33,6 +39,8 @@
   }{
    \key e \minor
    \ARhythmGuitar
+   \FourBarsEmRhythmGuitar
+   \BRhythmGuitar
   }
 
  >> % StaffGroup
