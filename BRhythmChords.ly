@@ -39,11 +39,6 @@ BRhythmChords = {
   aes2
   fis2
 
-  e2:7sus4
-  e2:7
-  e2:m7
-  b2:m
-  
 
 
  }

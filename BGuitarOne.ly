@@ -20,27 +20,5 @@ BGuitarOne = {
   \time 2/4
   ais,16 cis' fis fis' ~ fis' e'8. 
 
-  \time 4/4
- <<
-  {
-  \stemDown
-%  \grace gis8 
-  \stemDown
-  \slurDown
-  a8 a a a gis gis gis gis
-  g  g g g fis fis fis fis
-  \stemNeutral
-  \slurNeutral
-  }
-  \\
-  {
-%  \hideNotes \grace bes \unHideNotes
-  \stemUp
-  b16 d'8 b8 d'8.
-  b16 d'8 b8 d'8.
-  b16 d'8 b8 d'8.
-  b16 d'8 b8 d'8.
-  \stemNeutral
-  }
- >>
+ 
 }

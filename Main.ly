@@ -6,12 +6,15 @@
 %\include "RhythmicLine.ly"
 \include "ARhythmBeats.ly"
 \include "BRhythmBeats.ly"
+\include "CRhythmBeats.ly"
 \include "AGuitarOne.ly"
 \include "BGuitarOne.ly"
+\include "CGuitarOne.ly"
 \include "ARhythmGuitar.ly"
 \include "BRhythmGuitar.ly"
 \include "ARhythmChords.ly"
 \include "BRhythmChords.ly"
+\include "CRhythmChords.ly"
 %\include "ARhythmStrums.ly"
 \include "FourBarsEmRhythmGuitar.ly"
 \include "FourBarsEmRhythmChords.ly"
@@ -68,7 +71,17 @@
    \override ChordName #'font-size = #-1
    \ARhythmChords
    \FourBarsEmRhythmChords
-   \BRhythmChords
+   \FourBarsEmRhythmChords
+   {
+   \repeat volta 2 {
+    \BRhythmChords
+   }
+     \alternative {
+      { \CRhythmChords }
+      { \CRhythmChords }
+    }
+   }
+   \ARhythmChords
   }
 
 %{
@@ -87,9 +100,19 @@
    \override Staff.NoteHead.style = #'slash
    \ARhythmBeats
    \FourBarsEmRhythmBeats
-   \BRhythmBeats
-  }
+   \FourBarsEmRhythmBeats
+   {
+   \repeat volta 2 {
+    \BRhythmBeats
+   }
+     \alternative {   
+       { \CRhythmBeats }
+       { \CRhythmBeats }       
+     }
+   }
+      \ARhythmBeats
 
+   }
 
 %  \new RhythmicStaff {
    %\override Staff.NoteHead.style = #'slash
@@ -105,7 +128,17 @@
    \key e \minor
    \AGuitarOne
    \FourBarsEmGuitarOne
-   \BGuitarOne
+   \FourBarsEmGuitarOne
+   {
+   \repeat volta 2 {
+    \BGuitarOne
+   }
+    \alternative {
+     { \CGuitarOne }
+     { \CGuitarOne }
+    }
+   }
+      \AGuitarOne
   }
 %{
   \new Staff \with {

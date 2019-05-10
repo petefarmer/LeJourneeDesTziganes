@@ -5,5 +5,6 @@ FourBarsEmRhythmChords = {
   e1:m
   e1:m
   e1:m
+  
  }
 }
