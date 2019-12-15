@@ -1,6 +1,7 @@
 %  Le Journee des Tziganes
 \version "2.18.0"
 \include "definitions_No-Tab.ly"
+\include "tabber.ly"
 \include "predefined-guitar-fretboards.ly"
 \include "StaticChordChart.ly"
 %\include "RhythmicLine.ly"
@@ -8,6 +9,7 @@
 \include "BRhythmBeats.ly"
 \include "CRhythmBeats.ly"
 \include "AGuitarOne.ly"
+\include "AGuitarOneTab.ly"
 \include "BGuitarOne.ly"
 \include "CGuitarOne.ly"
 \include "ARhythmGuitar.ly"
@@ -140,6 +142,13 @@
    }
       \AGuitarOne
   }
+  
+   \new TabStaff {
+   \AGuitarOneTab
+  }
+  
+  
+  
 %{
   \new Staff \with {
    instrumentName = \markup {\column {"Rhythm" \line {"Guitar"}}}
