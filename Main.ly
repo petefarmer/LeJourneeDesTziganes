@@ -9,9 +9,11 @@
 \include "BRhythmBeats.ly"
 \include "CRhythmBeats.ly"
 \include "AGuitarOne.ly"
-\include "AGuitarOneTab.ly"
+\include "AGuitarOneTab.ly" 
 \include "BGuitarOne.ly"
+\include "BGuitarOneTab.ly"
 \include "CGuitarOne.ly"
+\include "CGuitarOneTab.ly"
 \include "ARhythmGuitar.ly"
 \include "BRhythmGuitar.ly"
 \include "ARhythmChords.ly"
@@ -145,6 +147,9 @@
   
    \new TabStaff {
    \AGuitarOneTab
+   \repeat unfold 8 {s1}
+   \BGuitarOneTab
+   \CGuitarOneTab
   }
   
   
