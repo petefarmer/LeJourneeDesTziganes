@@ -32,7 +32,7 @@
  \header {
   title = "Le Journée Des Tziganes"
   subtitle = "DRAFT"
-  subsubtitle = "v0.3"
+  subsubtitle = "v0.4"
   composer = "John Jorgenson"
   copyright = \markup { \char ##x00A9 Copyright Jorgensongs 2014 }
  }
@@ -148,8 +148,14 @@
    \new TabStaff {
    \AGuitarOneTab
    \repeat unfold 8 {s1}
-   \BGuitarOneTab
-   \CGuitarOneTab
+   \repeat volta 2 {
+     \BGuitarOneTab
+   }
+    \alternative {
+     { \CGuitarOneTab }
+     { \CGuitarOneTab }
+   }
+     \AGuitarOneTab
   }
   
   
